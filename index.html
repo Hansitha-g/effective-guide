@@ -3,29 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Website</title>
+    <title>Flipkart - Online Shopping Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <header>
-        <div class="logo">ShopKart</div>
-        <input type="text" placeholder="Search for products">
-        <button>Login</button>
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="logo">🛒 Flipkart</div>
+            <span class="travel">Travel</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for Products, Brands and More">
+        </div>
+        <div class="navbar-right">
+            <span>📍 Location not set</span>
+            <button class="login-btn">Login</button>
+            <span>More</span>
+            <span>🛒 Cart</span>
+        </div>
     </header>
 
     <!-- Categories -->
     <section class="categories">
-        <div>Mobiles</div>
-        <div>Fashion</div>
-        <div>Electronics</div>
-        <div>Home</div>
-        <div>Beauty</div>
+        <div class="category-item">
+            <span>👜</span>
+            <p>For You</p>
+        </div>
+        <div class="category-item">
+            <span>👕</span>
+            <p>Fashion</p>
+        </div>
+        <div class="category-item">
+            <span>📱</span>
+            <p>Mobiles</p>
+        </div>
+        <div class="category-item">
+            <span>💄</span>
+            <p>Beauty</p>
+        </div>
+        <div class="category-item">
+            <span>💻</span>
+            <p>Electronics</p>
+        </div>
+        <div class="category-item">
+            <span>🏠</span>
+            <p>Home</p>
+        </div>
+        <div class="category-item">
+            <span>🛋️</span>
+            <p>Appliances</p>
+        </div>
+        <div class="category-item">
+            <span>🎮</span>
+            <p>Toys, Games</p>
+        </div>
+        <div class="category-item">
+            <span>🍔</span>
+            <p>Food & Home</p>
+        </div>
+        <div class="category-item">
+            <span>🚗</span>
+            <p>Auto Acc.</p>
+        </div>
+        <div class="category-item">
+            <span>🏃</span>
+            <p>Sports</p>
+        </div>
+        <div class="category-item">
+            <span>📚</span>
+            <p>Books</p>
+        </div>
     </section>
 
-    <!-- Products -->
-    <section class="products" id="product-list"></section>
+    <!-- Products/Ads Grid -->
+    <section class="products">
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=vivo+X300" alt="vivo X300">
+            <h3>vivo X300 FE</h3>
+            <p>Launch 6th May, 12 PM</p>
+            <p class="ad-label">AD</p>
+        </div>
+        
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=ASUS+Expertbook" alt="ASUS">
+            <h3>ASUS Expertbook</h3>
+            <p>Launching 22nd Apr</p>
+            <p class="ad-label">AD</p>
+        </div>
+        
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=Aavante" alt="Aavante">
+            <h3>Aavante Prime X</h3>
+            <p>Spl. launch price ₹</p>
+            <p class="ad-label">AD</p>
+        </div>
+        
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=Fashion" alt="Fashion">
+            <h3>Min. 70% Off</h3>
+            <p>Fashion Collection</p>
+            <p class="ad-label">AD</p>
+        </div>
+        
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=Chief" alt="Chief">
+            <h3>Up to 80% Off</h3>
+            <p>Summer Collection</p>
+            <p class="ad-label">AD</p>
+        </div>
+        
+        <div class="product-card black-bg">
+            <img src="https://via.placeholder.com/300x300?text=Intel" alt="Intel">
+            <h3>From ₹6,299/M*</h3>
+            <p>Laptop Deals</p>
+            <p class="ad-label">AD</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
