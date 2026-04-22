@@ -1,152 +1,32 @@
-# Simple Flipkart Clone (HTML, CSS, JS)
-
-Create three files in the same folder:
-
----
-
-## `index.html`
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Clone</title>
+    <title>Shopping Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navbar -->
     <header>
-        <div class="logo">Flipkart Clone</div>
-        <input type="text" placeholder="Search products...">
+        <div class="logo">ShopKart</div>
+        <input type="text" placeholder="Search for products">
         <button>Login</button>
     </header>
 
-    <section class="banner">
-        <h1>Big Sale Offers</h1>
-        <p>Up to 50% Off</p>
+    <!-- Categories -->
+    <section class="categories">
+        <div>Mobiles</div>
+        <div>Fashion</div>
+        <div>Electronics</div>
+        <div>Home</div>
+        <div>Beauty</div>
     </section>
 
-    <section class="products" id="product-list">
-    </section>
+    <!-- Products -->
+    <section class="products" id="product-list"></section>
 
     <script src="script.js"></script>
 </body>
 </html>
-```
-
----
-
-## `style.css`
-
-```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #f1f3f6;
-}
-
-header {
-    background: #2874f0;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-header input {
-    width: 40%;
-    padding: 8px;
-}
-
-header button {
-    padding: 8px 15px;
-    background: white;
-    color: #2874f0;
-    border: none;
-    cursor: pointer;
-}
-
-.banner {
-    background: orange;
-    text-align: center;
-    padding: 40px;
-    color: white;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.product-card {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-}
-
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.product-card button {
-    background: #2874f0;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-```
-
----
-
-## `script.js`
-
-```javascript
-const products = [
-    {
-        name: "Smartphone",
-        price: "₹15,999",
-        image: "https://via.placeholder.com/200"
-    },
-    {
-        name: "Laptop",
-        price: "₹45,999",
-        image: "https://via.placeholder.com/200"
-    },
-    {
-        name: "Headphones",
-        price: "₹1,999",
-        image: "https://via.placeholder.com/200"
-    },
-    {
-        name: "Shoes",
-        price: "₹2,499",
-        image: "https://via.placeholder.com/200"
-    }
-];
-
-const productList = document.getElementById("product-list");
-
-products.forEach(product => {
-    const card = document.createElement("div");
-    card.classList.add("product-card");
-
-    card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h
-```
